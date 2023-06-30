@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Animation</title>
+    <style>
+      .container {
+        width: 100%;
+      }
+
+      .circle {
+        margin: 20rem auto;
+        width: 8rem;
+        height: 8rem;
+        background-color: red;
+        border-radius: 50%;
+        animation: pulse 0.5s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.25);
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
